@@ -13,12 +13,6 @@ body {
   background-color: #c6cefb;
 }
 
-/* hamburger menu */
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-}
-
 /* HEADER */
 li,
 a,
@@ -79,53 +73,52 @@ a .cta-contact {
   background-color: white;
 }
 
-/* PRODUCT LIST */
-.product-list {
+/* body */
+
+.container {
+  margin-top: 30px;
   display: flex;
-  flex: 1;
-  gap: 0px 50px;
   justify-content: center;
-  padding: 10px;
-  flex-wrap: wrap;
+  gap: 150px;
+  margin: 25px 50px;
 }
-
-.item img {
-  max-width: 300px;
+.info {
+  display: block;
+  justify-content: center;
 }
-
-.item {
-  margin: 50px;
-  padding: 0px 0px 50px 0px;
+.picture {
+  margin: 0 auto;
+  width: 800px;
+  border-radius: 30px;
 }
-.item {
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 40%);
-}
-.item h1,
-p {
+.cta_body {
+  display: block;
   text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #5c68bf;
+  border-radius: 20px;
+  padding: 20px 0px;
+  font-size: 32px;
+  margin-top: 15px;
 }
 p {
-  font-size: 32px;
+  font-size: 35px;
+  margin-bottom: 40px;
 }
-h1 {
-  font-size: 30px;
-}
-a {
-  color: black;
-}
-.search-body {
-  flex-basis: 100%;
-  margin: 20px 55px;
-  width: 300px;
-  height: 40px;
-  border-radius: 20px;
+input {
+  border-radius: 5px;
   border-style: none;
-  padding-left: 20px;
+  padding: 10px;
+  margin-right: 20px;
 }
-::placeholder {
-  padding: 20px;
+.textarea {
+  margin-top: 40px;
+  border-radius: 30px;
+}
+.submit {
+  margin-top: 20px;
+  font-size: 23px;
 }
 
 @media all and (max-width: 1240px) {
@@ -157,5 +150,23 @@ a {
     padding: 15px;
     margin: 5px;
     margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 1620px) {
+  .picture_cta {
+    display: none;
+  }
+}
+
+@media all and (max-width: 760px) {
+  .info {
+    max-width: 60%;
+  }
+  input {
+    margin: 20px 0px;
+  }
+  .textarea {
+    max-width: 80%;
   }
 }
