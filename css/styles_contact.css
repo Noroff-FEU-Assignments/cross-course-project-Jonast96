@@ -115,6 +115,7 @@ input {
 .textarea {
   margin-top: 40px;
   border-radius: 30px;
+  padding: 30px;
 }
 .submit {
   margin-top: 20px;

@@ -79,59 +79,66 @@ a .cta-contact {
   background-color: white;
 }
 
-/* PRODUCT LIST */
-.product-list {
-  display: flex;
-  flex: 1;
-  gap: 0px 50px;
-  justify-content: center;
-  padding: 10px;
-  flex-wrap: wrap;
-}
-
-.item img {
-  max-width: 300px;
-}
-
-.item {
-  margin: 50px;
-  padding: 0px 0px 50px 0px;
-}
-.item {
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 40%);
-}
-.item h1,
-p {
-  text-align: center;
-}
-p {
-  font-size: 32px;
-}
+/* Body */
 h1 {
+  margin-top: 20px;
+  font-size: 40px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 200px;
+  background-color: #fefefe;
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  margin-top: 170px;
+  position: absolute;
+  gap: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fefefe;
+  border-radius: 20px;
+  padding-bottom: 200px;
+  /* justify-content: center; */
+  /* flex-flow: row; */
+}
+.sidebar a {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.sidebar {
+  margin-left: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.h2 {
   font-size: 30px;
+  margin: 10px;
+  display: flex;
+  /* text-align: center; */
+}
+.active_orders {
+  padding: 0px 100px;
+}
+.info {
+  padding: 10px;
+  border-style: solid;
+  border-width: 0px 0px 1px 1px;
+}
+.order {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.order p {
+  margin-top: 28px;
 }
 a {
   color: black;
-}
-.search-body {
-  flex-basis: 100%;
-  margin: 20px 55px;
-  width: 300px;
-  height: 40px;
-  border-radius: 20px;
-  border-style: none;
-  padding-left: 20px;
-}
-::placeholder {
-  padding: 20px;
-}
-
-@media all and (max-width: 1240px) {
-  .product-list {
-    flex-direction: row;
-  }
 }
 
 @media all and (max-width: 1650px) {
@@ -163,5 +170,24 @@ a {
     padding: 15px;
     margin: 5px;
     margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  h1 {
+    display: none;
+  }
+  .container {
+    display: block;
+    padding-bottom: 0px;
+  }
+  .order {
+    padding-bottom: 100px;
+  }
+  .info {
+    border-radius: 5px 5px 20px 20px;
+  }
+  .sidebar {
+    text-align: center;
   }
 }
