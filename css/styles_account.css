@@ -95,8 +95,8 @@ h1 {
 .container {
   display: flex;
   margin-top: 170px;
-  position: absolute;
   gap: 40px;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fefefe;
